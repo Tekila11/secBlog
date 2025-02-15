@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your CTF Writeups</title>
+    <style>
+        :root {
+            --neon-blue: #00fff2;
+            --dark-bg: #0a0b1c;
+            --darker-bg: #050612;
+            --text-color: #e1e1ff;
+        }
+        
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            font-family: 'Courier New', monospace;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--darker-bg);
+            border-bottom: 2px solid var(--neon-blue);
+            padding: 1rem;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .logo {
+            font-size: 2rem;
+            color: var(--neon-blue);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .nav-links a:hover {
+            border-color: var(--neon-blue);
+            color: var(--neon-blue);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 2rem;
+        }
+
+        .content {
+            background-color: var(--darker-bg);
+            padding: 2rem;
+            border: 1px solid var(--neon-blue);
+        }
+
+        .article-title {
+            color: var(--neon-blue);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .metadata {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 2rem;
+        }
+
+        .tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: rgba(0, 255, 242, 0.1);
+            color: var(--neon-blue);
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            font-size: 0.9rem;
+        }
+
+        aside {
+            background-color: var(--darker-bg);
+            padding: 1rem;
+            border: 1px solid var(--neon-blue);
+        }
+
+        .sidebar-title {
+            color: var(--neon-blue);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .recent-posts {
+            list-style: none;
+            padding: 0;
+        }
+
+        .recent-posts li {
+            margin-bottom: 0.5rem;
+        }
+
+        .recent-posts a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .recent-posts a:hover {
+            color: var(--neon-blue);
+        }
+
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+            
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">~/CTF_Writeups</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/writeups">Writeups</a>
+                <a href="/articles">Articles</a>
+                <a href="/about">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <h1 class="article-title">Sample CTF Writeup: Web Exploitation Challenge</h1>
+            <div class="metadata">
+                <span>Posted on February 15, 2025</span>
+                <div class="tags">
+                    <span class="tag">#web</span>
+                    <span class="tag">#exploitation</span>
+                    <span class="tag">#ctf</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <p>Your writeup content goes here...</p>
+            </div>
+        </div>
+
+        <aside>
+            <h2 class="sidebar-title">Recent Writeups</h2>
+            <ul class="recent-posts">
+                <li><a href="#">Web Exploitation Challenge</a></li>
+                <li><a href="#">Reverse Engineering Walkthrough</a></li>
+                <li><a href="#">Cryptography Challenge Solution</a></li>
+            </ul>
+        </aside>
+    </main>
+</body>
+</html>
